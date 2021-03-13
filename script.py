@@ -23,8 +23,9 @@ df = pd.read_excel(r'',  engine = 'openpyxl', sheet_name=0,  usecols='A:J')
 
 
 def pegardato(xpathcelda,  info):
-	#clickeacelda usando xpathcelda 
-	#send keys info
+	element = driver.find_element_by_xpath("").click()
+	element.send_keys(info)
+
 
 
 for numerofila in range(len(df.index)):
